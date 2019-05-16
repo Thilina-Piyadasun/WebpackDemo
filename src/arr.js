@@ -1,5 +1,7 @@
-const flatArray =  (array) => {
+export function flatArray(array){
     return array.flat(Infinity)
-};
+}
 
-export default flatArray;
+export function doubleArray(array){
+    return array.flatMap( a => [a ,2*a])
+}
